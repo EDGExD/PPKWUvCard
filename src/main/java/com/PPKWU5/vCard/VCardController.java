@@ -61,7 +61,7 @@ public class VCardController {
     @GetMapping("/vCard")
     public String giveVCard(@RequestParam(defaultValue = "empty") String name, @RequestParam(defaultValue = "empty") String address) throws IOException {
 
-        String card = "BEGIN:VCA <br/>"+
+        String card = "BEGIN:VCARD <br/>"+
                 "VERSION:1.0<br/>" +
                 "N:"+name+"<br/>" +
                 "FN:"+name+"<br/>"+
